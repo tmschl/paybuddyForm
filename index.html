@@ -1,0 +1,46 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="validate.js"></script>
+</head>
+<body>
+  <form>
+    <label>Bill Description:</label>
+    <input type="text" id="desc" />
+    <div id="desc-errors"></div>
+    <br>
+    <label>Amount:</label>
+    <input type="text" id="amount" />
+    <br>
+    <div id="price"></div>
+    <input type="submit" hidden="hidden" />
+  </form>
+  <form>
+    <fieldset>
+      <legend>Credit Card Info</legend>
+      
+      <input type="text" id="cardNumber" value="Credit Card Number"></input>
+      <div id="cardValid"></div>
+      
+      <input type="text" id="ccv" value="CCV"></input>
+      <div id="ccvValid"></div>
+      
+      <input type="text" id="exp" value="Expiration"></input>
+      <div id="expValid"></div>
+
+      <input type-"text" id="name" value="Name On Card"></input>
+      <div id="nameValid"></div>
+      
+      <input type="text" id="address" value="Billing Address"></input>
+      <div id="addressValid"></div>
+      
+      <select id="mylist">
+        <option value="One-Time">One-Time</option>
+        <option value="Monthly">Monthly</option>
+        <option value="Anually">Anually</option>
+      </select>
+      <input type="submit">
+    </fieldset>
+</body>
+</html>
